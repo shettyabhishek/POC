@@ -1,0 +1,25 @@
+<div class='row'>
+    <div class="col-sm-12 col-lg-12">
+        <header></header>
+    </div>
+</div>    
+<div class="row mainContent">
+    <div class="col-sm-12 col-lg-12">
+        <div style="padding:.5rem 1rem;text-align: center;">
+            <ag-grid-angular [ngClass]="{ caseTableOnLoad: onLoad, caseTable: !onLoad }" 
+                class="ag-theme-balham"
+                [rowSelection]="rowSelection"
+                [rowData]="rowData"
+                (selectionChanged)="onSelectionChanged($event)"
+                (gridReady)="onGridReady($event)"
+                [columnDefs]="columnDefs">
+            </ag-grid-angular>
+            <case-details-component *ngIf="!onLoad" class='caseDetails' [caseDetails]="caseDetailsObj" (closeOnCancel)="closeCaseDetailsPanel($event)">
+
+            </case-details-component>
+        </div>
+    </div>
+</div>
+<div class='row'>
+    <div class="col-sm-12 col-lg-12"><footer></footer></div>
+</div>    

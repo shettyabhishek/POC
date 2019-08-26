@@ -1,0 +1,28 @@
+{
+    "cases": [
+        {
+            "caseId": "1122874394",
+            "caseDescription": "The outcome of a call is marked as N/A when there is not a cause code into the response message SIP 200 OK (after BYE message). Since parameter is optional, sometimes is not in and those calls are marked as N/A. Please find another way to provide the correct outcome (result) of such a calls."
+        },
+        {
+            "caseId": "1122874457",
+            "caseDescription": "we are currently running 9.7(1)21 and we would like to upgrade both of our 5525's (HA pair) to 9.7(1)24to address CSCvi16029"
+        },
+        {
+            "caseId": "1118128689",
+            "caseDescription": "I'm unable to rehost a license from a failed ISR4331/K9 to a replacement model.<br/>Faulty Serial: FDO2104A2C8.<br/>Replacement Serial: FDO2134A28L<br/> replacement is an exact model: ISR4331/K9"
+        },
+        {
+            "caseId": "1122874664",
+            "caseDescription": "Recently deploys in firepower management console are causing network interruptions.There are several monitoring servers that generate dozens of alerts each, the times coincide with deployment of policies.I have attached FMC generated troubleshoot file, please let me know what else is needed to find the cause of this."
+        },
+        {
+            "caseId": "1122874680",
+            "caseDescription": "I am working for Great west Life company.We are having Audio / Video call quality issues with CMS bridge callsREQUIRED INFORMATION:* CONTACT NAME: Manpreet Khanna* CONTACT PHONE NUMBER: (204) 946-7588* CONTACT EMAIL ADDRESS:Manpreet.khanna@gwl.ca<mailto:Manpreet.khanna@gwl.ca>* userid:Manpreetkhanna1*CONTRACT #: 93988669* SERIAL #: FOC2204NDLS"
+        },
+        {
+            "caseId": "1122874914",
+            "caseDescription": "We would like to add posture check to our existing AnyConnect VPN configuration using ISE.  We simply want to check that Windows or Mac OS endpoints have a antivirus solution installed and that virus definitions are up to date.  We are looking for configuration assistance on this and recommendation for AnyConnect 4.6 or 4.7 software along with ISE 2.4 Patch 5.  "
+        }
+    ]
+}

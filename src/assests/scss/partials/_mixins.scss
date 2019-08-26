@@ -1,0 +1,49 @@
+/***
+    File name: _mixins.scss
+    Author: Abhishek H Shekara
+    Description: All reusable snippets of code / functions are declared and defined in this file
+***/
+
+
+//Importing google fonts
+@mixin google-font($font){
+    $font: unquote($font);
+    @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+//Mixins for media query
+@mixin mobile-screen{
+    @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+        @content;
+    }
+}
+@mixin tab-screen{
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1112px){
+        @content;
+    }
+}
+
+
+@mixin menu-header {
+    background: $theme-color;
+    @include brdr-rad-mxn(8px,0,8px,0);
+}
+@mixin brdr-rad-mxn($r1,$r2,$r3,$r4) {
+    border-radius: $r1 $r2 $r3 $r4;
+}
+@mixin anchor-styles {
+    a{
+        border-bottom: 1px solid transparentize(#efefef, 1);
+        cursor: pointer;display: block; 
+        transition: border-bottom 0.7s;
+        transition-timing-function: ease-in-out;
+        &:hover{
+            border-bottom: 1px solid opacify($color: #efefef, $amount: .8);
+        }
+    }
+}
+@mixin header-styles-general {
+    h1,h2,h3,h4{
+        margin: 0;
+    }    
+}

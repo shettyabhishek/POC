@@ -1,0 +1,43 @@
+
+<div class='mainContainer'>
+    <div class='title'>
+        <span>Case Number: {{caseDetails.caseId}}</span>
+        <i class="fa fa-times" aria-hidden="true" (click)="closeCaseDetailsPanel($event)"></i>
+    </div>
+    <div class='description'> <strong>Description: </strong> 
+        <span [innerHTML]="caseDetails.caseDescription"></span>
+    </div>
+    <div class='actionable'>
+        <span class='label'> Actionable Scenario </span>
+    </div>  
+    <select>
+        <option> Select </option>
+        <option> Order shipped but not closed </option>
+        <option> service ended but invoice not generated </option>
+        <option> RMA Closed but credit memo not generated </option>
+        <option> Manually adjusted booking value but system changed it without informing </option>
+        <option> Booked event was raised for header but not lines </option>
+        <option> Unable to book order due to shipping method null error but getting error on applying shipping method </option>
+        <option> Orders delivered and closed but invoice not generated </option>
+        <option> Data mis-match between BO and CCW on order status </option>
+        <option> PO is undispatched but not cancelled </option>
+        <option> Released holds on orders but invoices not generated </option>
+        <option> Part Configuration is not getting validated </option>
+        <option> Orders are shipped but not closed </option>
+        <option> Orders are closed but not invoiced </option>
+        <option> Customer eligible for payment term but not able to change it on order </option>
+        <option> Meraki order shipped and closed but not closed in CCW </option>
+        <option> Order booked in CCW but not reached Meraki </option>
+        <option> Order closed but line flowing into OOD platform </option>
+        <option> Holds released in GTM(Global Trade Management) but still visible on CCW </option>
+        <option> Orders closed in Q1 but interfaced to AR in Q2 </option>
+        <option> Order stuck due to 'request date too late', request date changed but order still stuck </option>
+        <option> Events interfaced to otm but no response received </option>
+        <option> Order change hold applied, but orders moved forward - all lines </option>
+        <option> Hold release request - line level </option>
+    </select>  
+    <div class='actions'>
+        <button type='button' class='btn btn-primary'>Update</button>
+        <button type='button' class='btn btn-default' (click)="closeCaseDetailsPanel($event)">Cancel</button>
+    </div>  
+</div>
